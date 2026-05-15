@@ -1,15 +1,31 @@
 package br.ETS;
 
+import java.util.InputMismatchException;
+import java.util.Scanner;
+
 public class Main{
 
     public static void main(String[] args) {
+        Scanner entrada = new Scanner (System.in);
+        int numero;
 
-        for (int i = 1; i < 11; i++) {
-                for (int j = 0; j < 11; j++) {
-                    int multiplicacao = i * j;
-                    System.out.printf(i + " * " + j + " = " + multiplicacao + "\t");
+        while (true) {
+            try {
+                System.out.print("Digite um número");
+                numero = Integer.parseInt(entrada.nextLine());
+                //numero = entrada.nextInt();
+
+                if (numero < 20) {
+                    continue;
+                } else {
+                    System.out.println("O número digitado é maior que 20.");
+                    break;
                 }
-            System.out.println();
+
+            } catch (NumberFormatException | InputMismatchException e) {
+                System.out.println("Ops... você digitou caracteres inválidos, digite apenas número.");
             }
-    }
+        }
+        System.out.println(numero);
+        }
 }
