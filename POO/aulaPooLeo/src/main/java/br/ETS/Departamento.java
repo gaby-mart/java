@@ -10,4 +10,13 @@ public class Departamento {
         this.orcamento = orcamento;
         this.numFuncionarios = numFuncionarios;
     }
+
+    public void alterarNomeSetor(String novoNome){
+        novoNome = nome;
+    }
+
+    public double calcularAumentoOrcamento(double percentual){
+        return (orcamento * percentual) + orcamento;
+    }
+
 }
