@@ -5,25 +5,9 @@ public class Colaborador {
     private String nome;
     private String cargo;
 
-    public Colaborador(){
-        System.out.println("Sem parâmetros");
-    }
-
-    public Colaborador(String nome){
-        this.nome = nome;
-        System.out.println("1 parâmetro");
-    }
-
-    public Colaborador(String nome, int edv){
-        this.edv = edv;
-        this.nome = nome;
-        System.out.println("2 parâmetros");
-    }
-
-    public Colaborador(int edv, String nome, String cargo){
-        this.edv = edv;
-        this.nome = nome;
+    public Colaborador(String cargo, String nome, int edv) {
         this.cargo = cargo;
-        System.out.println("3 parâmetros");
+        this.nome = nome;
+        this.edv = edv;
     }
 }
