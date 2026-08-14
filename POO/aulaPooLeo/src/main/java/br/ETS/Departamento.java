@@ -1,9 +1,9 @@
 package br.ETS;
 
 public class Departamento {
-    private String nome;
-    private double orcamento;
-    private int numFuncionarios;
+    String nome;
+    double orcamento;
+    int numFuncionarios;
 
     public Departamento(String nome, double orcamento, int numFuncionarios) {
         this.nome = nome;
@@ -19,4 +19,12 @@ public class Departamento {
         return (orcamento * percentual) + orcamento;
     }
 
+    int obterNumeroFuncionarios(){
+        return numFuncionarios;
+    }
+
+    public void exibirDetalhes(){
+        System.out.printf("O departamento %s está com %d funcionários e com o orçamento de " + " de %.2f reais.\n",
+                this.nome, this.numFuncionarios, this.orcamento);
+    }
 }

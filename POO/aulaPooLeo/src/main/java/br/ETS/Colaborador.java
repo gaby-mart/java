@@ -1,9 +1,9 @@
 package br.ETS;
 
 public class Colaborador {
-    private int edv;
-    private String nome;
-    private String cargo;
+    int edv;
+    String nome;
+    String cargo;
 
     public Colaborador(String cargo, String nome, int edv) {
         this.cargo = cargo;

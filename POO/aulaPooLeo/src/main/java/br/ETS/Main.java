@@ -5,5 +5,8 @@ package br.ETS;
 public class Main {
     public static void main(String[] args) {
        Departamento departamento = new Departamento("ETS", 10.000, 100);
+
+       departamento.exibirDetalhes();
+        System.out.println(departamento.obterNumeroFuncionarios());
     }
 }
